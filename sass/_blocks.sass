@@ -8,6 +8,59 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.25
-	font-family: "RobotoRegularNew", sans-serif
+	font-family: "FuturaPTBook", sans-serif
 	overflow-x: hidden
 
+.header
+	padding-top: 29px
+	padding-bottom: 32px
+	background-color: #fff
+	&__h-nav
+		padding-top: 12px
+	&__h-phone
+		display: block
+		text-align: right
+	&__h-basket
+		display: block
+		text-align: right
+
+.page
+	&__p-top
+	&__dost
+		padding-top: 85px
+	&__prods
+		padding-top: 85px
+	&__p-prods
+		padding-bottom: 30px
+	&__p-title
+		text-align: center
+		padding-bottom: 30px
+	&__tabs
+		padding-bottom: 128px
+	&__p-tabs
+		text-align: center
+	&__open
+		background-image: url(../img/section-open.jpg)
+		background-size: cover
+		position: relative
+		padding-top: 38px
+		padding-bottom: 14px
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 0
+			top: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(#1c2127,.95)
+	&__p-open
+		z-index: 20
+		position: relative
+	&__articles
+		padding-top: 140px
+		padding-bottom: 110px
+	&__p-articles
+		padding-bottom: 30px

@@ -15,7 +15,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Styles -->
-	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/bootstrap-4.1.1/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -25,10 +26,10 @@
 	<header class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-md-7">
 					<div class="header__h-nav">
 						<ul class="h-nav">
-							<li class="h-nav__item">
+							<li class="h-nav__item active">
 								<a href="#" class="h-nav__link">
 									Главная
 								</a>
@@ -66,25 +67,25 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="header__h-info">
-						<div class="header__h-phone">
-							<div class="h-phone">
-								<i class="h-phone__icon"></i>
-								<a href="tel:+79990739977" class="h-phone__tel">
-									+7 999 073 99 77
-								</a>
-								<a href="#" class="h-phone__btn">
-									Заказать звонок
-								</a>
-							</div>
-						</div>
-						<div class="header__h-basket">
-							<a href="#" class="h-basket">
-								<i class="h-basket__icon"></i>
-								Корзина сыров
+				<div class="col-md-3">
+					<div class="header__h-phone">
+						<div class="h-phone">
+							<i class="h-phone__icon"></i>
+							<a href="tel:+79990739977" class="h-phone__tel">
+								+7 999 073 99 77
+							</a>
+							<a href="#" class="h-phone__btn">
+								Заказать звонок
 							</a>
 						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="header__h-basket">
+						<a href="#" class="h-basket">
+							<i class="h-basket__icon"></i>
+							Корзина сыров
+						</a>
 					</div>
 				</div>
 			</div>
@@ -93,7 +94,30 @@
 	<div class="page">
 		<div class="page__p-top">
 			<div class="p-top">
-				<img src="" alt="alt" class="p-top__img">
+				<div class="p-top__slider owl-carousel">
+					<div class="p-top__item">
+						<img src="img/slider/1.jpg" alt="alt" class="p-top__img">
+					</div>
+					<div class="p-top__item">
+						<img src="img/slider/2.jpg" alt="alt" class="p-top__img">
+					</div>
+				</div>
+				<div class="p-top__flex">
+					<div class="container">
+						<div class="row justify-content-end">
+							<div class="col-md-6">
+								<div class="p-top__description">
+									<div class="p-top__logo">
+										<img src="img/logo.png" alt="">
+									</div>
+									<p>
+										Сыр, сделанный<br>по французским технологиям<br>на Нижегородской земле
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="page__dost">
@@ -103,7 +127,7 @@
 						<div class="page__p-dost">
 							<div class="p-dost">
 								<div class="p-dost__top">
-									<img src="" alt="alt" class="p-dost__img">
+									<img src="img/icons/rem.png" alt="alt" class="p-dost__img">
 								</div>
 								<div class="p-dost__title">
 									Ремесло
@@ -118,7 +142,7 @@
 						<div class="page__p-dost">
 							<div class="p-dost">
 								<div class="p-dost__top">
-									<img src="" alt="alt" class="p-dost__img">
+									<img src="img/icons/chi.png" alt="alt" class="p-dost__img">
 								</div>
 								<div class="p-dost__title">
 									Традиция
@@ -133,7 +157,7 @@
 						<div class="page__p-dost">
 							<div class="p-dost">
 								<div class="p-dost__top">
-									<img src="" alt="alt" class="p-dost__img">
+									<img src="img/icons/cow.png" alt="alt" class="p-dost__img">
 								</div>
 								<div class="p-dost__title">
 									Сырье
@@ -152,13 +176,13 @@
 				<div class="row">
 					<div class="col-md-4">
 						<div class="page__p-prods">
-							<a href="#" class="p-prods">
-								<div class="p-prods__top">
-									<img src="" alt="alt" class="p-prods__img">
-								</div>
-								<h2 class="p-prods__title">
+							<div class="p-prods">
+								<a href="#" class="p-prods__top">
+									<img src="img/prod-min.jpg" alt="alt" class="p-prods__img">
+								</a>
+								<a href="#" class="p-prods__title">
 									Плюшевый
-								</h2>
+								</a>
 								<div class="p-prods__price">
 									750 руб <span>за 1 кг</span>
 								</div>
@@ -172,24 +196,24 @@
 										</a>
 									</div>
 								</div>
-							</a>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="page__p-prods">
-							<a href="#" class="p-prods">
-								<div class="p-prods__top">
-									<img src="" alt="alt" class="p-prods__img">
-								</div>
-								<h2 class="p-prods__title">
+							<div class="p-prods">
+								<a href="#" class="p-prods__top">
+									<img src="img/cultur.jpg" alt="alt" class="p-prods__img">
+								</a>
+								<a href="#" class="p-prods__title">
 									Плюшевый
-								</h2>
+								</a>
 								<div class="p-prods__price">
-									750 руб <span>за 1 кг</span>
+									4 000 руб <span>за 1 кг</span>
 								</div>
 								<div class="p-prods__hidden">
 									<p class="p-prods__description">
-										Мягкий сыр с белой плесенью для ценителей. Отличаеться молочным, сливочным, грибным, и острым вкусом
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam est dolorem excepturi modi voluptas aspernatur ab et ipsa, dolor beatae magni asperiores quasi, esse odit nisi natus doloribus voluptate earum!
 									</p>
 									<div class="p-prods__button">
 										<a href="#" class="btn">
@@ -197,18 +221,18 @@
 										</a>
 									</div>
 								</div>
-							</a>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="page__p-prods">
-							<a href="#" class="p-prods">
-								<div class="p-prods__top">
-									<img src="" alt="alt" class="p-prods__img">
-								</div>
-								<h2 class="p-prods__title">
+							<div class="p-prods">
+								<a href="#" class="p-prods__top">
+									<img src="img/prod-min.jpg" alt="alt" class="p-prods__img">
+								</a>
+								<a href="#" class="p-prods__title">
 									Плюшевый
-								</h2>
+								</a>
 								<div class="p-prods__price">
 									750 руб <span>за 1 кг</span>
 								</div>
@@ -222,18 +246,18 @@
 										</a>
 									</div>
 								</div>
-							</a>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="page__p-prods">
-							<a href="#" class="p-prods">
-								<div class="p-prods__top">
-									<img src="" alt="alt" class="p-prods__img">
-								</div>
-								<h2 class="p-prods__title">
+							<div class="p-prods">
+								<a href="#" class="p-prods__top">
+									<img src="img/prod-min.jpg" alt="alt" class="p-prods__img">
+								</a>
+								<a href="#" class="p-prods__title">
 									Плюшевый
-								</h2>
+								</a>
 								<div class="p-prods__price">
 									750 руб <span>за 1 кг</span>
 								</div>
@@ -247,18 +271,18 @@
 										</a>
 									</div>
 								</div>
-							</a>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="page__p-prods">
-							<a href="#" class="p-prods">
-								<div class="p-prods__top">
-									<img src="" alt="alt" class="p-prods__img">
-								</div>
-								<h2 class="p-prods__title">
+							<div class="p-prods">
+								<a href="#" class="p-prods__top">
+									<img src="img/prod-min.jpg" alt="alt" class="p-prods__img">
+								</a>
+								<a href="#" class="p-prods__title">
 									Плюшевый
-								</h2>
+								</a>
 								<div class="p-prods__price">
 									750 руб <span>за 1 кг</span>
 								</div>
@@ -272,18 +296,18 @@
 										</a>
 									</div>
 								</div>
-							</a>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="page__p-prods">
-							<a href="#" class="p-prods">
-								<div class="p-prods__top">
-									<img src="" alt="alt" class="p-prods__img">
-								</div>
-								<h2 class="p-prods__title">
+							<div class="p-prods">
+								<a href="#" class="p-prods__top">
+									<img src="img/prod-min.jpg" alt="alt" class="p-prods__img">
+								</a>
+								<a href="#" class="p-prods__title">
 									Плюшевый
-								</h2>
+								</a>
 								<div class="p-prods__price">
 									750 руб <span>за 1 кг</span>
 								</div>
@@ -297,18 +321,18 @@
 										</a>
 									</div>
 								</div>
-							</a>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="page__p-prods">
-							<a href="#" class="p-prods">
-								<div class="p-prods__top">
-									<img src="" alt="alt" class="p-prods__img">
-								</div>
-								<h2 class="p-prods__title">
+							<div class="p-prods">
+								<a href="#" class="p-prods__top">
+									<img src="img/prod-min.jpg" alt="alt" class="p-prods__img">
+								</a>
+								<a href="#" class="p-prods__title">
 									Плюшевый
-								</h2>
+								</a>
 								<div class="p-prods__price">
 									750 руб <span>за 1 кг</span>
 								</div>
@@ -322,18 +346,18 @@
 										</a>
 									</div>
 								</div>
-							</a>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="page__p-prods">
-							<a href="#" class="p-prods">
-								<div class="p-prods__top">
-									<img src="" alt="alt" class="p-prods__img">
-								</div>
-								<h2 class="p-prods__title">
+							<div class="p-prods">
+								<a href="#" class="p-prods__top">
+									<img src="img/prod-min.jpg" alt="alt" class="p-prods__img">
+								</a>
+								<a href="#" class="p-prods__title">
 									Плюшевый
-								</h2>
+								</a>
 								<div class="p-prods__price">
 									750 руб <span>за 1 кг</span>
 								</div>
@@ -347,18 +371,18 @@
 										</a>
 									</div>
 								</div>
-							</a>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="page__p-prods">
-							<a href="#" class="p-prods">
-								<div class="p-prods__top">
-									<img src="" alt="alt" class="p-prods__img">
-								</div>
-								<h2 class="p-prods__title">
+							<div class="p-prods">
+								<a href="#" class="p-prods__top">
+									<img src="img/prod-min.jpg" alt="alt" class="p-prods__img">
+								</a>
+								<a href="#" class="p-prods__title">
 									Плюшевый
-								</h2>
+								</a>
 								<div class="p-prods__price">
 									750 руб <span>за 1 кг</span>
 								</div>
@@ -372,7 +396,7 @@
 										</a>
 									</div>
 								</div>
-							</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -393,79 +417,107 @@
 					<div class="col-md-12">
 						<div class="page__p-tabs">
 							<ul class="p-tabs">
-								<li class="p-tabs__item active">
-									<a href="#" class="p-tabs__link">
-										Все рецепты
-									</a>
+								<li class="t1 p-tabs__item active">
+									Все рецепты
 								</li>
-								<li class="p-tabs__item">
-									<a href="#" class="p-tabs__link">
-										Свежие сыры
-									</a>
+								<li class="t2 p-tabs__item">
+									Свежие сыры
 								</li>
-								<li class="p-tabs__item">
-									<a href="#" class="p-tabs__link">
-										Полутвердые сыры
-									</a>
+								<li class="t3 p-tabs__item">
+									Полутвердые сыры
 								</li>
-								<li class="p-tabs__item">
-									<a href="#" class="p-tabs__link">
-										Твердые сыры
-									</a>
+								<li class="t4 p-tabs__item">
+									Твердые сыры
 								</li>
-								<li class="p-tabs__item">
-									<a href="#" class="p-tabs__link">
-										Сыры с плесенью
-									</a>
+								<li class="t5 p-tabs__item">
+									Сыры с плесенью
 								</li>
 							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="page__p-rec">
-							<a href="#" class="p-rec">
-								<div class="p-rec__top">
-									<img src="" alt="alt" class="p-rec__img">
+							<div class="p-tabs__content">
+								<div class="t1">
+									<div class="row">
+										<div class="col-md-4">
+											<div class="page__p-rec">
+												<a href="#" class="p-rec">
+													<div class="p-rec__top">
+														<img src="img/buratt.jpg" alt="alt" class="p-rec__img">
+													</div>
+													<h2 class="p-rec__title">
+														Буратта
+													</h2>
+													<p class="p-rec__description">
+														Буратта - это мешочек из тонкого слоя моцареллы, внутри которого находиться сливочная масса с нежнейшей структурой.
+													</p>
+												</a>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="page__p-rec">
+												<a href="#" class="p-rec">
+													<div class="p-rec__top">
+														<img src="img/buratt.jpg" alt="alt" class="p-rec__img">
+													</div>
+													<h2 class="p-rec__title">
+														Буратта
+													</h2>
+													<p class="p-rec__description">
+														Буратта - это мешочек из тонкого слоя моцареллы, внутри которого находиться сливочная масса с нежнейшей структурой.
+													</p>
+												</a>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="page__p-rec">
+												<a href="#" class="p-rec">
+													<div class="p-rec__top">
+														<img src="img/buratt.jpg" alt="alt" class="p-rec__img">
+													</div>
+													<h2 class="p-rec__title">
+														Буратта
+													</h2>
+													<p class="p-rec__description">
+														Буратта - это мешочек из тонкого слоя моцареллы, внутри которого находиться сливочная масса с нежнейшей структурой.
+													</p>
+												</a>
+											</div>
+										</div>
+									</div>
 								</div>
-								<h2 class="p-rec__title">
-									Буратта
-								</h2>
-								<p class="p-rec__description">
-									Буратта - это мешочек из тонкого слоя моцареллы, внутри которого находиться сливочная масса с нежнейшей структурой.
-								</p>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="page__p-rec">
-							<a href="#" class="p-rec">
-								<div class="p-rec__top">
-									<img src="" alt="alt" class="p-rec__img">
+								<div class="t2">
+									<div class="row">
+										<div class="col-md-4">
+											<div class="page__p-rec">
+												<a href="#" class="p-rec">
+													<div class="p-rec__top">
+														<img src="img/buratt.jpg" alt="alt" class="p-rec__img">
+													</div>
+													<h2 class="p-rec__title">
+														Буратта
+													</h2>
+													<p class="p-rec__description">
+														Буратта - это мешочек из тонкого слоя моцареллы, внутри которого находиться сливочная масса с нежнейшей структурой.
+													</p>
+												</a>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="page__p-rec">
+												<a href="#" class="p-rec">
+													<div class="p-rec__top">
+														<img src="img/buratt.jpg" alt="alt" class="p-rec__img">
+													</div>
+													<h2 class="p-rec__title">
+														Буратта
+													</h2>
+													<p class="p-rec__description">
+														Буратта - это мешочек из тонкого слоя моцареллы, внутри которого находиться сливочная масса с нежнейшей структурой.
+													</p>
+												</a>
+											</div>
+										</div>
+									</div>
 								</div>
-								<h2 class="p-rec__title">
-									Буратта
-								</h2>
-								<p class="p-rec__description">
-									Буратта - это мешочек из тонкого слоя моцареллы, внутри которого находиться сливочная масса с нежнейшей структурой.
-								</p>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="page__p-rec">
-							<a href="#" class="p-rec">
-								<div class="p-rec__top">
-									<img src="" alt="alt" class="p-rec__img">
-								</div>
-								<h2 class="p-rec__title">
-									Буратта
-								</h2>
-								<p class="p-rec__description">
-									Буратта - это мешочек из тонкого слоя моцареллы, внутри которого находиться сливочная масса с нежнейшей структурой.
-								</p>
-							</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -481,18 +533,21 @@
 									<h2>
 										Сыроварня &laquo;Сырные ясли открылись в Нижнем Новгороде в январе 2016 года&raquo;
 									</h2>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, pariatur cupiditate. Provident, pariatur? Et dicta distinctio, facere. Dolorem minima maiores animi accusamus voluptates accusantium laudantium dignissimos omnis eligendi, possimus aut.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, pariatur cupiditate. Provident, pariatur? Et dicta distinctio, facere. Dolorem minima maiores animi accusamus voluptates accusantium laudantium dignissimos omnis eligendi, possimus aut.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, pariatur cupiditate. Provident, pariatur? Et dicta distinctio, facere. Dolorem minima maiores animi accusamus voluptates accusantium laudantium dignissimos omnis eligendi, possimus aut.
-									</p>
+									<div class="p-open__text">
+										<p>
+											Немного о себе
+											По образованию я повар-кондитер, окончил по данной специальности нижегородское ПТУ в 1997 году. Базовые навыки и знания я получил именно тогда. Считаю, что приготовление сыра – ответственное дело, поэтому специальное образование совершенно необходимо, чтобы всерьёз этим заниматься.
+										</p>
+										<p>
+											Второе образование – высшее – я получил в Волго-Вятской академии (РАНХиГС). Сыроварение на долгие годы стало для меня хобби. Помню, как варил первые сыры дома, в кастрюльке на плите. Конечно, варил не каждый день, а изредка. Готовый «продукт» ел сам, угощал родителей, жену, друзей. Уже тогда я обратил внимание, что сыр, сделанный самостоятельно, намного вкуснее того, что можно купить в магазине.
+										</p>
+										<p>
+											Сыра всегда не хватало: его быстро съедали, а мои знакомые и друзья друзей хотели попробовать мой эксклюзивный продукт...
+										</p>
+									</div>
 								</div>
 								<div class="p-open__right">
-									<img src="" alt="alt" class="p-open__img">
+									<img src="img/chef.png" alt="alt" class="p-open__img">
 								</div>
 							</div>
 						</div>
@@ -507,13 +562,13 @@
 						<div class="page__p-articles">
 							<a href="#" class="p-articles">
 								<div class="p-articles__top">
-									<img src="" alt="alt" class="p-articles__img">
+									<img src="img/cultur.jpg" alt="alt" class="p-articles__img">
 								</div>
 								<h2 class="p-articles__title">
 									Культура употребления сыра
 								</h2>
 								<p class="p-articles__description">
-									Кусочек сыра можно съесть очень по-разному. Например
+									Кусочек сыра можно съесть очень по-разному. Например, добавить в салат. Или намазать на бутерброд с утра.
 								</p>
 								<div class="p-articles__button">
 									<a href="#" class="btn btn-little">
@@ -527,13 +582,13 @@
 						<div class="page__p-articles">
 							<a href="#" class="p-articles">
 								<div class="p-articles__top">
-									<img src="" alt="alt" class="p-articles__img">
+									<img src="img/cultur.jpg" alt="alt" class="p-articles__img">
 								</div>
 								<h2 class="p-articles__title">
 									Культура употребления сыра
 								</h2>
 								<p class="p-articles__description">
-									Кусочек сыра можно съесть очень по-разному. Например
+									Кусочек сыра можно съесть очень по-разному. Например, добавить в салат. Или намазать на бутерброд с утра.
 								</p>
 								<div class="p-articles__button">
 									<a href="#" class="btn btn-little">
@@ -547,13 +602,13 @@
 						<div class="page__p-articles">
 							<a href="#" class="p-articles">
 								<div class="p-articles__top">
-									<img src="" alt="alt" class="p-articles__img">
+									<img src="img/cultur.jpg" alt="alt" class="p-articles__img">
 								</div>
 								<h2 class="p-articles__title">
 									Культура употребления сыра
 								</h2>
 								<p class="p-articles__description">
-									Кусочек сыра можно съесть очень по-разному. Например
+									Кусочек сыра можно съесть очень по-разному. Например, добавить в салат. Или намазать на бутерброд с утра.
 								</p>
 								<div class="p-articles__button">
 									<a href="#" class="btn btn-little">
@@ -754,7 +809,19 @@
 	</footer>
 
 	<!-- Scripts -->
-	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="libs/jquery/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.p-top__slider').owlCarousel({
+				loop:true,
+				nav:false,
+				dots:false,
+				mouseDrag:false,
+				items:1
+			});
+		});
+	</script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- End_Scripts -->
 </body>

@@ -1,14 +1,35 @@
-/* font-family: "RobotoRegularNew" */
+/* font-family: "FuturaPTBook" */
 @font-face {
-  font-family: "RobotoRegularNew";
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-family: "FuturaPTBook";
+  src: url("../fonts/FuturaPT/FuturaPTBook.otf");
+}
+
+/* font-family: "FuturaPTMedium" */
+@font-face {
+  font-family: "FuturaPTMedium";
+  src: url("../fonts/FuturaPT/FuturaPTMedium.otf");
+}
+
+/* font-family: "FuturaPTMedium" */
+@font-face {
+  font-family: "FuturaPTMedium";
+  src: url("../fonts/FuturaPT/FuturaPTMedium.otf");
+}
+
+/* font-family: "NeoSansProRegular" */
+@font-face {
+  font-family: "NeoSansProRegular";
+  src: url("../fonts/NeoSansProRegular/NeoSansProRegular.eot");
+  src: url("../fonts/NeoSansProRegular/NeoSansProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/NeoSansProRegular/NeoSansProRegular.woff") format("woff"), url("../fonts/NeoSansProRegular/NeoSansProRegular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
-/* font-family: "RobotoRegularStandart" */
+/* font-family: "FuturaRegular" */
 @font-face {
-  font-family: "RobotoRegularStandart";
-  src: url("../fonts/RobotoRegular/RobotoRegular.ttf");
+  font-family: "FuturaRegular";
+  src: url("../fonts/FuturaRegular/FuturaRegular.eot");
+  src: url("../fonts/FuturaRegular/FuturaRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaRegular/FuturaRegular.woff") format("woff"), url("../fonts/FuturaRegular/FuturaRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }

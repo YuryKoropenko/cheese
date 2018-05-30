@@ -1,7 +1,6 @@
 {
   "name": "start_html",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +10,15 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuryKoropenko/cheese.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YuryKoropenko/cheese/issues"
+  },
+  "homepage": "https://github.com/YuryKoropenko/cheese#readme",
+  "description": ""
 }
