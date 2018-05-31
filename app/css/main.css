@@ -32,6 +32,14 @@ ol, ul {
   display: none;
 }
 
+a, li {
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: rgba(255, 204, 40, 0.8);
+}
+
 /*Внешние блоки*/
 body {
   font-size: 16px;
@@ -77,6 +85,8 @@ body {
 .page__p-title {
   text-align: center;
   padding-bottom: 30px;
+  position: relative;
+  z-index: 2;
 }
 
 .page__tabs {
@@ -122,6 +132,77 @@ body {
   padding-bottom: 30px;
 }
 
+.page__about {
+  background-image: url(../img/about.jpg.jpg);
+  background-size: cover;
+  position: relative;
+  padding-top: 88px;
+  padding-bottom: 62px;
+}
+
+.page__about::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 33, 39, 0.95);
+}
+
+.page__p-about {
+  position: relative;
+  z-index: 2;
+}
+
+.page__contact {
+  position: relative;
+}
+
+.page__contacts {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+.footer {
+  background-color: #1c2127;
+  padding: 21px 0 22px 0;
+}
+
+.footer__f-nav {
+  padding-top: 20px;
+}
+
+.footer__f-info {
+  padding-top: 20px;
+  margin-left: 47px;
+  margin-right: -47px;
+}
+
+.footer__f-social {
+  padding-top: 20px;
+  text-align: right;
+  display: block;
+}
+
+.footer__f-copy {
+  padding-top: 32px;
+  display: block;
+  text-align: right;
+  color: #fff;
+  opacity: .38;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "FuturaPTBook", sans-serif;
+}
+
 /*Компоненты*/
 .h-nav {
   font-size: 0;
@@ -152,6 +233,16 @@ body {
 .h-nav .active .h-nav__link {
   color: #ffcc28;
   text-decoration: none;
+}
+
+.h-nav__button {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icons/burger.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
 }
 
 .h-phone {
@@ -402,7 +493,7 @@ body {
   top: 100%;
   left: -1px;
   right: -1px;
-  z-index: 2;
+  z-index: 3;
   border-left: 1px solid #ebedf3;
   border-right: 1px solid #ebedf3;
   border-bottom: 1px solid #ebedf3;
@@ -458,6 +549,26 @@ body {
   color: #1c2127;
   font-size: 48px;
   font-family: "NeoSansProRegular", sans-serif;
+}
+
+.p-title__white {
+  color: #fff;
+  font-size: 48px;
+  padding-bottom: 6px;
+  position: relative;
+}
+
+.p-title__white::after {
+  width: 62px;
+  height: 4px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  background-color: #ffcc28;
+  margin: 0 auto;
 }
 
 .p-tabs {
@@ -607,5 +718,163 @@ body {
 
 .p-articles:hover {
   text-decoration: none;
+  color: #1c2127;
+}
+
+.p-about {
+  text-align: center;
+}
+
+.p-about p {
+  font-size: 22px;
+  color: #fff;
+  font-family: "FuturaPTBook", sans-serif;
+  line-height: 26px;
+  display: block;
+  padding-bottom: 26px;
+}
+
+.p-contacts {
+  padding: 28px 22px;
+  background-color: #fff;
+}
+
+.p-contacts__item {
+  color: #1c2127;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: "FuturaPTBook", sans-serif;
+  margin-bottom: 25px;
+  padding-left: 53px;
+  position: relative;
+}
+
+.p-contacts__item:last-child {
+  margin-bottom: 0;
+}
+
+.p-contacts__icon {
+  width: 53px;
+  height: 30px;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -15px;
+  display: block;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.f-logo {
+  display: inline-block;
+}
+
+.f-logo__img {
+  display: block;
+}
+
+.f-nav__item {
+  padding-bottom: 12px;
+  display: block;
+}
+
+.f-nav__item:last-child {
+  padding-bottom: 0;
+}
+
+.f-nav__link {
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "FuturaPTMedium", sans-serif;
+}
+
+.f-nav__link:hover {
+  text-decoration: none;
+  color: #ffcc28;
+}
+
+.f-info__item {
+  padding-bottom: 16px;
+  display: block;
+}
+
+.f-info__link {
+  font-size: 16px;
+  display: inline-block;
+  font-family: "FuturaPTMedium", sans-serif;
+  color: #fff;
+  padding-left: 32px;
+  position: relative;
+}
+
+.f-info__link:hover {
+  text-decoration: none;
+  color: #ffcc28;
+}
+
+.f-info__icon {
+  width: 20px;
+  height: 19px;
+  display: block;
+  left: 0;
+  top: 50%;
+  margin-top: -9.5px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.f-social {
+  font-size: 0;
+  display: inline-block;
+}
+
+.f-social__item {
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.f-social__item:last-child {
+  margin-right: 0;
+}
+
+.f-social__link {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.popup {
+  display: none;
+}
+
+.popup__title {
+  color: #1c2127;
+  font-size: 48px;
+  font-family: "NeoSansProRegular", sans-serif;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+#map {
+  min-height: 443px;
+}
+
+#map > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.form-group label {
+  font-size: 18px;
+  font-family: "FuturaPTBook", sans-serif;
   color: #1c2127;
 }

@@ -17,6 +17,7 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="libs/bootstrap-4.1.1/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -26,8 +27,9 @@
 	<header class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-7">
+				<div class="col-xl-7 col-lg-5 col-md-2 col-2">
 					<div class="header__h-nav">
+						<a href="#" class="h-nav__button"></a>
 						<ul class="h-nav">
 							<li class="h-nav__item active">
 								<a href="#" class="h-nav__link">
@@ -67,20 +69,20 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-xl-3 col-lg-4 col-md-5 col-10">
 					<div class="header__h-phone">
 						<div class="h-phone">
 							<i class="h-phone__icon"></i>
 							<a href="tel:+79990739977" class="h-phone__tel">
 								+7 999 073 99 77
 							</a>
-							<a href="#" class="h-phone__btn">
+							<a href="#p-callback" class="h-phone__btn">
 								Заказать звонок
 							</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-2">
+				<div class="col-xl-2 col-lg-3 col-md-4 col-12">
 					<div class="header__h-basket">
 						<a href="#" class="h-basket">
 							<i class="h-basket__icon"></i>
@@ -637,8 +639,19 @@
 						<div class="page__p-about">
 							<div class="p-about">
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error rerum, fuga quas odio officia similique nemo doloribus itaque repellendus ducimus libero cumque sunt harum excepturi beatae. Reprehenderit nesciunt animi tempora?<br><br>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error rerum, fuga quas odio officia similique nemo doloribus itaque repellendus ducimus libero cumque sunt harum excepturi beatae. Reprehenderit nesciunt animi tempora?
+									Здравствуйте, дорогие ценители вкусного сыра.<br>
+									Позвольте рассказать немного о себе и о сыроварне.
+								</p>
+								<p>
+									«Почему ты решил стать сыроделом? Почему именно сыроделом? Почему именно сейчас?»
+								</p>
+								<p>
+									Такие вопросы мне сначала задавали друзья, потом клиенты, теперь задаёт множество людей, интересующихся моей сыроварней.<br>
+									Наверное, пришло время открыть все тайны и честно рассказать, что привело меня к такому решению.
+								</p>
+								<p>
+									Немного о себе<br>
+									По образованию я повар-кондитер, окончил по данной специальности нижегородское ПТУ в 1997 году. Базовые навыки и знания я получил именно тогда. Считаю, что приготовление сыра – ответственное дело, поэтому специальное образование совершенно необходимо, чтобы всерьёз этим заниматься.
 								</p>
 							</div>
 						</div>
@@ -647,39 +660,41 @@
 			</div>
 		</div>
 		<div class="page__contact">
-			<iframe src="" frameborder="0"></iframe>
+			<div id="map">
+				<img src="img/map.jpg" alt="">
+			</div>
 			<div class="page__contacts">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-5">
+						<div class="col-xl-5 col-lg-6">
 							<div class="page__p-contacts">
 								<ul class="p-contacts">
 									<li class="p-contacts__item">
-										<i class="p-contacts__icon"></i>
+										<i class="p-contacts__icon" style="background-image: url(img/icons/6.png);"></i>
 										603163 Н.Новгород, ул. А.Хохлова, д. 15, оф.2
 									</li>
 									<li class="p-contacts__item">
-										<i class="p-contacts__icon"></i>
+										<i class="p-contacts__icon" style="background-image: url(img/icons/7.png);"></i>
 										+7 999 073 99 77 /Viber 79990739977
 									</li>
 									<li class="p-contacts__item">
-										<i class="p-contacts__icon"></i>
+										<i class="p-contacts__icon" style="background-image: url(img/icons/8.png);"></i>
 										y-cheese@yandex.ru
 									</li>
 									<li class="p-contacts__item">
-										<i class="p-contacts__icon"></i>
+										<i class="p-contacts__icon" style="background-image: url(img/icons/9.png);"></i>
 										artemgamayunov
 									</li>
 									<li class="p-contacts__item">
-										<i class="p-contacts__icon"></i>
+										<i class="p-contacts__icon" style="background-image: url(img/icons/10.png);"></i>
 										vk.com/id414999996
 									</li>
 									<li class="p-contacts__item">
-										<i class="p-contacts__icon"></i>
+										<i class="p-contacts__icon" style="background-image: url(img/icons/11.png);"></i>
 										m.me/1516145605348043
 									</li>
 									<li class="p-contacts__item">
-										<i class="p-contacts__icon"></i>
+										<i class="p-contacts__icon" style="background-image: url(img/icons/12.png);"></i>
 										ok.ru/artemgamayunov
 									</li>
 								</ul>
@@ -693,14 +708,14 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-4 col-lg-3">
 					<div class="footer__f-logo">
 						<a href="#" class="f-logo">
-							<img src="" alt="alt" class="f-logo__img">
+							<img src="img/footer-logo.png" alt="alt" class="f-logo__img">
 						</a>
 					</div>
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-4 col-lg-2 col-6">
 					<div class="footer__f-nav">
 						<ul class="f-nav">
 							<li class="f-nav__item">
@@ -726,7 +741,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-4 col-lg-2 col-6">
 					<div class="footer__f-nav">
 						<ul class="f-nav">
 							<li class="f-nav__item">
@@ -752,51 +767,41 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-6 col-lg-2">
 					<div class="footer__f-info">
 						<ul class="f-info">
 							<li class="f-info__item">
 								<a href="tel:+79990739977" class="f-info__link">
-									<i class="f-info__icon"></i>
+									<i class="f-info__icon" style="background-image: url(img/icons/footer-phone.png);"></i>
 									+7 999 073 99 77
 								</a>
 							</li>
 							<li class="f-info__item">
-								<a href="#" class="f-info__link">
-									<i class="f-info__icon"></i>
+								<a href="y-cheese@yandex.ru" class="f-info__link">
+									<i class="f-info__icon" style="background-image: url(img/icons/footer-mail.png);"></i>
 									y-cheese@yandex.ru
 								</a>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-6 col-lg-3">
 					<div class="footer__f-social">
 						<ul class="f-social">
 							<li class="f-social__item">
-								<a href="#" class="f-social__link">
-									
-								</a>
+								<a href="#" class="f-social__link" style="background-image: url(img/icons/1.png);"></a>
 							</li>
 							<li class="f-social__item">
-								<a href="#" class="f-social__link">
-									
-								</a>
+								<a href="#" class="f-social__link" style="background-image: url(img/icons/2.png);"></a>
 							</li>
 							<li class="f-social__item">
-								<a href="#" class="f-social__link">
-									
-								</a>
+								<a href="#" class="f-social__link" style="background-image: url(img/icons/3.png);"></a>
 							</li>
 							<li class="f-social__item">
-								<a href="#" class="f-social__link">
-									
-								</a>
+								<a href="#" class="f-social__link" style="background-image: url(img/icons/4.png);"></a>
 							</li>
 							<li class="f-social__item">
-								<a href="#" class="f-social__link">
-									
-								</a>
+								<a href="#" class="f-social__link" style="background-image: url(img/icons/5.png);"></a>
 							</li>
 						</ul>
 					</div>
@@ -807,10 +812,27 @@
 			</div>
 		</div>
 	</footer>
+	<div class="popup popup-callback" id="p-callback">
+		<form>
+			<div class="popup__title">
+				Обратная связь
+			</div>
+			<div class="form-group">
+				<label for="exampleInputEmail1">Имя</label>
+				<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+			</div>
+			<div class="form-group">
+				<label for="exampleInputPassword1">Телефон</label>
+				<input type="tel" class="form-control" id="exampleInputPassword1">
+			</div>
+			<button type="submit" class="btn">Отправить</button>
+		</form>
+	</div>
 
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
 	<script>
 		$(document).ready(function() {
 			$('.p-top__slider').owlCarousel({
@@ -818,7 +840,10 @@
 				nav:false,
 				dots:false,
 				mouseDrag:false,
-				items:1
+				items:1,
+				autoplay:true,
+				autoplayTimeout:8000,
+				autoplayHoverPause:true
 			});
 		});
 	</script>

@@ -30,5 +30,13 @@
 
 
 $(function() {
+
+	$('.h-nav__button').on('click', function() {
+		$('.h-nav').slideToggle();
+		return false;
+	});
+
 	$('.page__p-tabs').lightTabs();
+
+	$('.h-phone__btn').fancybox();
 });

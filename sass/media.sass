@@ -3,17 +3,180 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
+@media only screen and (min-width : 1230px)
+	.container
+		max-width: 1230px
+	/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1229px)
+	.container
+		max-width: 1140px
+	.h-nav__item
+		padding-right: 26px
+	.footer__f-info
+		margin-right: -70px
+	/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px)
+	.header__h-basket
+		padding-top: 8px
+	.header__h-nav
+		padding-top: 5px
+	.p-top__logo img
+		width: 200px
+	.p-tabs
+		width: 680px
+		margin: 0 auto
+	#map
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		overflow: hidden
+		img
+			height: 100%
+			width: auto
+	.footer__f-info
+		margin-right: -105px
 	/**/
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
+@media only screen and (max-width : 991px)
+	.h-nav
+		position: absolute
+		top: 100%
+		left: 0
+		right: 0
+		background-color: #fff
+		z-index: 20
+		padding-bottom: 5px
+		padding-top: 5px
+		display: none
+		min-width: 320px
+		-webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.4)
+		-moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.4)
+		box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.4)
+	.h-nav__item,
+	.h-nav__item:last-child
+		display: block
+		width: 100%
+		padding: 5px 15px
+	.h-nav__link
+		display: inline-block
+		width: auto
+	.header__h-nav
+		padding-top: 8px
+	.p-top__description p
+		font-size: 24px
+		line-height: 28px
+	.p-dost__description
+		font-size: 18px
+	.page__dost,
+	.page__prods
+		padding-top: 40px
+	.p-prods__title
+		height: 37 * 2 + px
+	.p-prods__price
+		padding-top: 8px
+	.p-rec__description
+		font-size: 18px
+	.p-tabs
+		padding-bottom: 15px
+	.page__tabs
+		padding-bottom: 40px
+	.p-open__left
+		max-width: 100%
+		width: 100%
+	.p-open__left h2
+		font-size: 24px
+		line-height: 28px
+	.p-open__left p
+		font-size: 18px
+		line-height: 22px
+	.p-open__right
+		display: none
+	.p-open__text
+		padding-right: 0
+	.page__articles
+		padding-top: 40px
+	.page__articles
+		padding-bottom: 10px
+	.p-articles__title
+		font-size: 24px
+	.p-articles__description
+		font-size: 18px
+		line-height: 22px
+		height: auto
+	.p-articles__button
+		.btn
+			margin: 0 auto
+	.page__about
+		padding-top: 40px
+		padding-bottom: 18px
+	.p-title__white
+		font-size: 30px
+	.p-about p
+		font-size: 18px
+		line-height: 22px
+		padding-bottom: 22px
+	.f-logo
+		max-width: 100%
+		&__img
+			max-width: 100%
+	.footer__f-info
+		margin-left: 0
+		margin-right: 0
+	.footer__f-copy
+		padding-top: 15px
+	.p-title
+		font-size: 30px
 	/**/
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
+@media only screen and (max-width : 767px)
+	.footer__f-logo
+		text-align: center
+	.footer__f-social
+		text-align: left
+	.footer__f-copy
+		text-align: left
+	.footer__f-social
+		padding-top: 15px
+	.f-info__item:last-child
+		padding-bottom: 0
+	.p-tabs__item
+		margin-right: 0
+		width: 100%
+	.p-tabs
+		width: 100%
+	.page__p-title
+		padding-bottom: 15px
+	.p-tabs__item
+		font-size: 20px
+	.header__h-basket
+		text-align: center
+	.p-top__description p
+		display: none
+	.p-top__logo img
+		width: 140px
+	.h-phone__tel
+		font-size: 24px
+	.h-nav
+		width: 290px
+		min-width: auto !important
+	.p-contacts__item
+		font-size: 18px
+	.p-contacts__item
+		margin-bottom: 15px
+	#map
+		height: 400px
 	/**/
 
 
@@ -46,12 +209,15 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
+	.h-nav__button
+		display: none
+	.h-nav
+		display: block !important
 	/**/
 
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
-	.container
-		max-width: 1230px
+	
 	/**/
 

@@ -35,6 +35,8 @@ body
 	&__p-title
 		text-align: center
 		padding-bottom: 30px
+		position: relative
+		z-index: 2
 	&__tabs
 		padding-bottom: 128px
 	&__p-tabs
@@ -64,3 +66,57 @@ body
 		padding-bottom: 110px
 	&__p-articles
 		padding-bottom: 30px
+	&__about
+		background-image: url(../img/about.jpg.jpg)
+		background-size: cover
+		position: relative
+		padding-top: 88px
+		padding-bottom: 62px
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 0
+			top: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(#1c2127,.95)
+	&__p-about
+		position: relative
+		z-index: 2
+	&__contact
+		position: relative
+	&__contacts
+		position: absolute
+		left: 0
+		right: 0
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+	&__p-contacts
+
+.footer
+	background-color: #1c2127
+	padding: 21px 0 22px 0
+	&__f-logo
+	&__f-nav
+		padding-top: 20px
+	&__f-info
+		padding-top: 20px
+		margin-left: 47px
+		margin-right: -47px
+	&__f-social
+		padding-top: 20px
+		text-align: right
+		display: block
+	&__f-copy
+		padding-top: 32px
+		display: block
+		text-align: right
+		color: #fff
+		opacity: .38
+		font-size: 12px
+		line-height: 18px
+		font-family: "FuturaPTBook", sans-serif
