@@ -15,6 +15,20 @@ body
 	padding-top: 29px
 	padding-bottom: 32px
 	background-color: #fff
+	&-noindex
+		position: relative
+		margin-bottom: 40px
+		.row
+			position: relative
+			&::after
+				content: ''
+				left: 15px
+				right: 15px
+				bottom: -32px
+				height: 1px
+				background-color: #1c2127
+				position: absolute
+				display: block
 	&__h-nav
 		padding-top: 12px
 	&__h-phone
@@ -96,6 +110,8 @@ body
 		transform: translateY(-50%)
 		-webkit-transform: translateY(-50%)
 	&__p-contacts
+	&__p-path
+		padding-bottom: 66px
 
 .footer
 	background-color: #1c2127

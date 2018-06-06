@@ -520,3 +520,40 @@
 		font-family: "NeoSansProRegular", sans-serif
 		text-align: left
 		margin-bottom: 1rem
+
+.p-path
+	font-size: 0
+	&__link
+		color: #1c2127
+		font-size: 18px
+		font-family: "FuturaPTMedium", sans-serif
+		display: block
+		border-bottom: 1px solid #1c2127
+		line-height: 17px
+		&:hover
+			color: #1c2127
+			border-color: transparent
+			text-decoration: none
+	&__item
+		display: inline-block
+		padding-left: 21px
+		padding-right: 16px
+		position: relative
+		&::before
+			content: ''
+			display: block
+			width: 5px
+			height: 5px
+			background-color: #ffcc28
+			position: absolute
+			left: 0
+			top: 50%
+			margin-top: -2.5px
+		&:first-child
+			padding-left: 0
+			&::before
+				display: none
+		&-last
+			.p-path__link
+				text-decoration: none
+				border-color: transparent
