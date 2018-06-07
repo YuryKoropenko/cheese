@@ -1,6 +1,14 @@
 @import "bourbon/bourbon"
 @import "sass/_blocks"
 
+@mixin clearfix()
+	&:before,
+	&:after
+		content: ""
+		display: table
+	&:after
+		clear: both
+
 /*Компоненты*/
 
 .h-nav
@@ -263,17 +271,27 @@
 		padding: 0 30px 24px
 	&__button
 		display: inline-block
+		width: 100%
+		text-align: center
 	&:hover
 		border-color: #ebedf3
 		border-bottom: none
 		.p-prods__hidden
 			display: block
+	&-catalog
+		.p-prods__hidden
+			position: static
+			display: block
+			border: none
+		&:hover
+			border: 1px solid #ebedf3
 
 .btn
 	background-color: #ffcc28
-	width: 248px
+	max-width: 248px
+	width: 100%
 	line-height: 53px
-	display: block
+	display: inline-block
 	text-align: center
 	color: #1c2127
 	font-size: 18px
@@ -282,6 +300,7 @@
 	border-radius: 0
 	&:hover
 		color: #1c2127
+		background-color: #d8a913
 	&-little
 		line-height: 30px
 		width: 166px
@@ -306,6 +325,8 @@
 			content: ''
 			background-color: #ffcc28
 			margin: 0 auto
+	&-big
+		text-transform: uppercase
 
 .p-tabs
 	display: block
@@ -557,3 +578,120 @@
 			.p-path__link
 				text-decoration: none
 				border-color: transparent
+
+.p-pagin
+	display: inline-block
+	@include clearfix()
+	&__link
+		width: 46px
+		height: 46px
+		display: block
+		background-color: #ffcc28
+		color: #1c2127
+		font-size: 18px
+		font-family: "FuturaPTMedium", sans-serif
+		text-align: center
+		line-height: 46px
+		&:hover
+			color: #1c2127
+			background-color: #d8a913
+			text-decoration: none
+	&__item
+		display: block
+		float: left
+		padding: 0 10px
+		&-first
+			.p-pagin__link
+				position: relative
+				&::after
+					content: ''
+					display: block
+					width: 9px
+					height: 15px
+					position: absolute
+					background-image: url(../img/icons/arrows.png)
+					background-position: left center
+					left: 50%
+					margin-left: -4.5px
+					top: 50%
+					margin-top: -7.5px
+		&-last
+			.p-pagin__link
+				position: relative
+				&::after
+					content: ''
+					display: block
+					width: 9px
+					height: 15px
+					position: absolute
+					background-image: url(../img/icons/arrows.png)
+					background-position: right center
+					left: 50%
+					margin-left: -4.5px
+					top: 50%
+					margin-top: -7.5px
+	.active
+		.p-pagin__link
+			color: #1c2127
+			background-color: #d8a913
+			text-decoration: none
+
+.p-vid
+	display: inline-block
+	font-size: 0
+	&__link
+		background-image: url(../img/icons/vid.png)
+		background-repeat: no-repeat
+		width: 34px
+		height: 33px
+		display: block
+		transition: none;
+	&__item
+		display: inline-block
+		padding: 0 6px
+		&-v1
+			.p-vid__link
+				background-position: left top
+		&-v2
+			.p-vid__link
+				background-position: left bottom
+		&-v1.active
+			.p-vid__link
+				background-position: right top
+		&-v2.active
+			.p-vid__link
+				background-position: right bottom
+		&:last-child
+			padding-right: 0
+		&:first-child
+			padding-left: 0
+
+.p-prods-line
+	border: none
+	margin-bottom: 100px
+	.p-prods__left
+		text-align: left
+		display: block
+	.p-prods__description
+		text-align: left
+		padding-bottom: 0
+		a
+			display: inline-block
+			font-size: 30px
+			color: #1c2127
+			font-family: "FuturaPTMedium", sans-serif
+			line-height: 1.2
+			&:hover
+				text-decoration: none
+				color: #1c2127
+		p
+			color: #1c2127
+			display: block
+			font-size: 30px
+			font-family: "FuturaPTBook", sans-serif
+			line-height: 1.2
+			padding-top: 30px
+	.p-prods__price
+		padding: 0
+	.p-prods__button
+		padding-top: 60px

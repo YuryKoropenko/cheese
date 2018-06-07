@@ -195,6 +195,20 @@ body {
   padding-bottom: 66px;
 }
 
+.page__p-pagin {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 140px;
+}
+
+.page__p-vid {
+  display: block;
+  text-align: right;
+  width: 100%;
+  margin-top: -10px;
+}
+
 .footer {
   background-color: #1c2127;
   padding: 21px 0 22px 0;
@@ -225,6 +239,10 @@ body {
   font-size: 12px;
   line-height: 18px;
   font-family: "FuturaPTBook", sans-serif;
+}
+
+.v1 {
+  display: none;
 }
 
 /*Компоненты*/
@@ -565,6 +583,8 @@ body {
 
 .p-prods__button {
   display: inline-block;
+  width: 100%;
+  text-align: center;
 }
 
 .p-prods:hover {
@@ -576,11 +596,22 @@ body {
   display: block;
 }
 
+.p-prods-catalog .p-prods__hidden {
+  position: static;
+  display: block;
+  border: none;
+}
+
+.p-prods-catalog:hover {
+  border: 1px solid #ebedf3;
+}
+
 .btn {
   background-color: #ffcc28;
-  width: 248px;
+  max-width: 248px;
+  width: 100%;
   line-height: 53px;
-  display: block;
+  display: inline-block;
   text-align: center;
   color: #1c2127;
   font-size: 18px;
@@ -591,6 +622,7 @@ body {
 
 .btn:hover {
   color: #1c2127;
+  background-color: #d8a913;
 }
 
 .btn-little {
@@ -622,6 +654,10 @@ body {
   content: '';
   background-color: #ffcc28;
   margin: 0 auto;
+}
+
+.p-title-big {
+  text-transform: uppercase;
 }
 
 .p-tabs {
@@ -965,6 +1001,173 @@ body {
 .p-path__item-last .p-path__link {
   text-decoration: none;
   border-color: transparent;
+}
+
+.p-pagin {
+  display: inline-block;
+}
+
+.p-pagin:before, .p-pagin:after {
+  content: "";
+  display: table;
+}
+
+.p-pagin:after {
+  clear: both;
+}
+
+.p-pagin__link {
+  width: 46px;
+  height: 46px;
+  display: block;
+  background-color: #ffcc28;
+  color: #1c2127;
+  font-size: 18px;
+  font-family: "FuturaPTMedium", sans-serif;
+  text-align: center;
+  line-height: 46px;
+}
+
+.p-pagin__link:hover {
+  color: #1c2127;
+  background-color: #d8a913;
+  text-decoration: none;
+}
+
+.p-pagin__item {
+  display: block;
+  float: left;
+  padding: 0 10px;
+}
+
+.p-pagin__item-first .p-pagin__link {
+  position: relative;
+}
+
+.p-pagin__item-first .p-pagin__link::after {
+  content: '';
+  display: block;
+  width: 9px;
+  height: 15px;
+  position: absolute;
+  background-image: url(../img/icons/arrows.png);
+  background-position: left center;
+  left: 50%;
+  margin-left: -4.5px;
+  top: 50%;
+  margin-top: -7.5px;
+}
+
+.p-pagin__item-last .p-pagin__link {
+  position: relative;
+}
+
+.p-pagin__item-last .p-pagin__link::after {
+  content: '';
+  display: block;
+  width: 9px;
+  height: 15px;
+  position: absolute;
+  background-image: url(../img/icons/arrows.png);
+  background-position: right center;
+  left: 50%;
+  margin-left: -4.5px;
+  top: 50%;
+  margin-top: -7.5px;
+}
+
+.p-pagin .active .p-pagin__link {
+  color: #1c2127;
+  background-color: #d8a913;
+  text-decoration: none;
+}
+
+.p-vid {
+  display: inline-block;
+  font-size: 0;
+}
+
+.p-vid__link {
+  background-image: url(../img/icons/vid.png);
+  background-repeat: no-repeat;
+  width: 34px;
+  height: 33px;
+  display: block;
+  transition: none;
+}
+
+.p-vid__item {
+  display: inline-block;
+  padding: 0 6px;
+}
+
+.p-vid__item-v1 .p-vid__link {
+  background-position: left top;
+}
+
+.p-vid__item-v2 .p-vid__link {
+  background-position: left bottom;
+}
+
+.p-vid__item-v1.active .p-vid__link {
+  background-position: right top;
+}
+
+.p-vid__item-v2.active .p-vid__link {
+  background-position: right bottom;
+}
+
+.p-vid__item:last-child {
+  padding-right: 0;
+}
+
+.p-vid__item:first-child {
+  padding-left: 0;
+}
+
+.p-prods-line {
+  border: none;
+  margin-bottom: 100px;
+}
+
+.p-prods-line .p-prods__left {
+  text-align: left;
+  display: block;
+}
+
+.p-prods-line .p-prods__description {
+  text-align: left;
+  padding-bottom: 0;
+}
+
+.p-prods-line .p-prods__description a {
+  display: inline-block;
+  font-size: 30px;
+  color: #1c2127;
+  font-family: "FuturaPTMedium", sans-serif;
+  line-height: 1.2;
+}
+
+.p-prods-line .p-prods__description a:hover {
+  text-decoration: none;
+  color: #1c2127;
+}
+
+.p-prods-line .p-prods__description p {
+  color: #1c2127;
+  display: block;
+  font-size: 30px;
+  font-family: "FuturaPTBook", sans-serif;
+  line-height: 1.2;
+  padding-top: 30px;
+}
+
+.p-prods-line .p-prods__price {
+  padding: 0;
+}
+
+.p-prods-line .p-prods__button {
+  padding-top: 60px;
 }
 
 #map {

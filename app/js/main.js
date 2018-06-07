@@ -36,6 +36,21 @@ $(function() {
 		return false;
 	});
 
+	$('.p-vid__item-v1 .p-vid__link').on('click', function() {
+		$('.p-vid__item-v2').removeClass('active');
+		$('.p-vid__item-v1').addClass('active');
+		$('.v2').hide();
+		$('.v1').show();
+		return false;
+	});
+	$('.p-vid__item-v2 .p-vid__link').on('click', function() {
+		$('.p-vid__item-v1').removeClass('active');
+		$('.p-vid__item-v2').addClass('active');
+		$('.v1').hide();
+		$('.v2').show();
+		return false;
+	});
+
 	$('.page__p-tabs').lightTabs();
 
 	$('.h-phone__btn').fancybox();
