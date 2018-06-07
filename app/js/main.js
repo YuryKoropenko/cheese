@@ -54,4 +54,6 @@ $(function() {
 	$('.page__p-tabs').lightTabs();
 
 	$('.h-phone__btn').fancybox();
+	$('.p-card__fancybox').fancybox();
+	$('.photochese').fancybox();
 });
